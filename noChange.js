@@ -60,11 +60,12 @@ const chooseQuiz = (index, givenAns) => {
     }
   } else {
     answers.push({ ...quizData[index], givenAns });
+
   }
   displayAnswers(answers);
 };
 /* 
-chooseQuiz function received two parameters index & givenAns. then using find on answers array check ans.id & loading quizdata.id, if metched then enter into if blook & set serial=0.
+chooseQuiz function received two parameters index & givenAns. Using find on answers array check ans.id == quizData.id, if metched then enter into if blook. Then using for-of loop iterate each quiz from answers & check exist.id==quiz.id, remove 1 item from answers (That means Number of ans. is not increase) because allready have answered of this question & last givenAns will update. If find value is undefined then push the quiz & givenAns into answers array. 
 */
 const displayAnswers = (data) => {
   // এই পুরো ফাইলে কেও কোন কিছু পরিবর্তন করবেন না । এইখানে কোন Bug নেই ।

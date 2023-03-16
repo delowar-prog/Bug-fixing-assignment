@@ -117,7 +117,18 @@
         </div>
         <div class="collapse-content"> 
            <p>
-            <strong>quizTimer:</strong> quizTimer function received a parameter dismiss, If true then the Timer will be stoped by clearInterval(timer) & return. otherwise intered into setInterval() function, and after every 1 second count value will increases. Then convert into minutes using (count/60). (mod=count % 60) means when (count>60) then start from 1. If count>60, then timer give a signal time is up with color red-700 & red-300 as like light On & Off.
+            <strong>quizTimer:</strong> quizTimer function received a parameter dismiss, If true then the Timer will be stoped by clearInterval(timer) & return. otherwise enter into setInterval() function, and after every 1 second count value will increases. Then convert into minutes using (count/60). (mod=count % 60) means when (count>60) then start from 1. If count>60, then timer give a signal time is up with color red-700 & red-300 as like light On & Off.
+           </p>   
+        </div>
+      </div>
+
+      <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+        <div class="collapse-title text-xl font-medium">
+         5. chooseQuiz()
+        </div>
+        <div class="collapse-content"> 
+           <p>
+            <strong>chooseQuiz (index & givenAns):</strong> Using find mathod on answers array check ans.id == quizData.id, if metched then enter into if blook. for-of loop iterate each quiz from answers & check exist.id==quiz.id, then remove 1 item from answers (That means Serial Number of ans. will not be changed) because allready have answered of that question & last givenAns will update.<span style="color:rgb(93, 10, 10)"> If find return undefined then push the quiz & givenAns into answers array.</span>  
            </p>   
         </div>
       </div>
@@ -127,7 +138,7 @@
 </main>
 
  <!--
-  
+ 
  -->
  
 
