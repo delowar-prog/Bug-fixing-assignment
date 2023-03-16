@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Quiz Hero</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- You don't need to change noChange.js file. It's fine -->
+    <script src="./noChange.js" defer></script>
+    <!-- You don't need to change noChange.js file. It's fine -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              common: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white font-common">
+    <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+      <nav class="flex justify-between items-center w-9/12 mx-auto">
+        <div class="text-zinc-800 font-bold uppercase">
+          <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+          <p class="text-[10px] font-normal capitalize -mt-1">
+            Get ready to Quiz and be amazed!
+          </p>
+        </div>
+        <button onclick="window.location.href='index.html'"
+          class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
+        >
+          Exam-page
+        </button>
+      </nav>
+    </header>
+    <!-- Header/Navbar section end -->
+<main>
+  <section class="">
+    <div class="title w-[25%] mx-auto bg-green-400 my-20 p-5 rounded-2xl">
+      <h1 class="text-3xl font-bold text-violet-600 text-center">Delowar Blogs</h1>
+    </div>
+    <div class="w-[75%] mx-auto">
+      <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+        <div class="collapse-title text-xl font-medium">
+          Differance between map(), forEach(), filter() & find().
+        </div>
+        <div class="collapse-content"> 
+          <p><strong>map() : </strong>map() is an array method. It received a callback function and do something with each element of an array and eventually returns a new array. It doesn’t change the original array.</p></br>
+          <p><strong>forEach() : </strong>forEach () is an iterative method of an array. It provides callback function once for each element of an array but it doesn't return anything without undefined. It also doesn’t change the original array.</p></br>
+          <p><strong>Filter() : </strong>Filter() is an array method. It receives a callback function that filters each element of an array on a condition and returns a new array with the matching elements.</p></br>
+          <p><strong>Find() : </strong>Find() & Filter() is like the same. It filters each element of an array on a condition and returns the first matching element.</p>
+        </div>
+      </div>
+      <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+        <div class="collapse-title text-xl font-medium">
+          Differance between Cookies, Local Storage, Session Storage.
+        </div>
+        <div class="collapse-content"> 
+          <p><strong>Cookies : </strong>A Cookies is a small size of data that a server sends to the user's PC. Its highest memory capacity is 4kb & storage location are both browser and server. A programmer manually set expiration period of  cookies.<br>
+          <b>Cookies are mainly used for three purposes :</b> <br>
+          1. Session management : Logins, shopping carts management<br>
+          2. Personalization : User preferences & themes settings <br> 
+          3. Monitoring : Monitoring users behavior</p></br>
+          <p><strong>Local Storage : </strong>Local Storage is a browser API. It stores string format data into a browser as key-value pairs. Its highest memory capacity is 10kb & storage location only browser. There is no expiration time for storing data into local storage.<br>
+          
+            1. localStorage.getItem()
+            2. localStorage.setItem()
+            3. localStorage.removeItem()
+            4. localStorage.crear()
+            5. localStorage.length are some Local Storage Method.
+            
+        </p></br>
+        <p><strong>Session Storage : </strong>Local Storage & Session Storage 90% as like the same. Session storage is also a browser API. Its highest memory capacity is 5kb & storage location only browser. There is no expiration time for storing data into local storage.<br>
+          
+          1. localStorage.getItem()
+          2. localStorage.setItem()
+          3. localStorage.removeItem()
+          4. localStorage.crear()
+          5. localStorage.length are some Local Storage Method.
+          
+      </p></br>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+ 
+
+    <!-- Footer section start -->
+    <footer class="py-10 text-center text-sm mt-20">
+      Copyright © 2023 Quiz Hero All Rights Reserved.
+    </footer>
+    <!-- Footer section end -->
+  </body>
+</html>
