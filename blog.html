@@ -107,6 +107,18 @@
           <p>
           This process will be continue, and a time all function will be execute & remove from the callstack. <strong>When callstack will blank & callback queue have processed asynchronous function, then each function sent to callstack one after one and execute. A media is used to sent processed function from callback queue to callstack is called <span style="color:rgb(93, 10, 10)">Event Loop.</span></strong>     
           </p>
+          <img src="data/event-loop.jpg" alt="" class="w-[75%] mx-auto my-5">
+        </div>
+      </div>
+
+      <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+        <div class="collapse-title text-xl font-medium">
+         4. quizTimer()
+        </div>
+        <div class="collapse-content"> 
+           <p>
+            <strong>quizTimer:</strong> quizTimer function received a parameter dismiss, If true then the Timer will be stoped by clearInterval(timer) & return. otherwise intered into setInterval() function, and after every 1 second count value will increases. Then convert into minutes using (count/60). (mod=count % 60) means when (count>60) then start from 1. If count>60, then timer give a signal time is up with color red-700 & red-300 as like light On & Off.
+           </p>   
         </div>
       </div>
 
@@ -114,6 +126,9 @@
   </section>
 </main>
 
+ <!--
+  
+ -->
  
 
     <!-- Footer section start -->

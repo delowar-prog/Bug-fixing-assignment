@@ -6,13 +6,14 @@ const quizTimer = (dismiss) => {
     clearInterval(timer);
     return;
   }
+
+  
   timer = setInterval(() => {
     let countHtml = document.querySelector("#count");
     let covtMin = Math.floor(count / 60);
     let mod = count % 60;
     let min = covtMin.toString().length === 1 ? `0${covtMin}` : covtMin;
     let countSec = mod.toString().length === 1 ? `0${mod}` : mod;
-
     countHtml.innerHTML = `${
       min + ":" + countSec
     }<sub class="text-xs">sec</sub>`;
@@ -62,7 +63,9 @@ const chooseQuiz = (index, givenAns) => {
   }
   displayAnswers(answers);
 };
-
+/* 
+chooseQuiz function received two parameters index & givenAns. then using find on answers array check ans.id & loading quizdata.id, if metched then enter into if blook & set serial=0.
+*/
 const displayAnswers = (data) => {
   // এই পুরো ফাইলে কেও কোন কিছু পরিবর্তন করবেন না । এইখানে কোন Bug নেই ।
   answersContainer.innerHTML = "";
