@@ -60,9 +60,10 @@
       <h1 class="text-3xl font-bold text-violet-600 text-center">Delowar Blogs</h1>
     </div>
     <div class="w-[75%] mx-auto">
+
       <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
         <div class="collapse-title text-xl font-medium">
-          Differance between map(), forEach(), filter() & find().
+         1. Differance between map(), forEach(), filter() & find() ?.
         </div>
         <div class="collapse-content"> 
           <p><strong>map() : </strong>map() is an array method. It received a callback function and do something with each element of an array and eventually returns a new array. It doesn’t change the original array.</p></br>
@@ -71,9 +72,10 @@
           <p><strong>Find() : </strong>Find() & Filter() is like the same. It filters each element of an array on a condition and returns the first matching element.</p>
         </div>
       </div>
+
       <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
         <div class="collapse-title text-xl font-medium">
-          Differance between Cookies, Local Storage, Session Storage.
+        2.  Differance between Cookies, Local Storage, Session Storage ?.
         </div>
         <div class="collapse-content"> 
           <p><strong>Cookies : </strong>A Cookies is a small size of data that a server sends to the user's PC. Its highest memory capacity is 4kb & storage location are both browser and server. A programmer manually set expiration period of  cookies.<br>
@@ -90,17 +92,24 @@
             5. localStorage.length are some Local Storage Method.
             
         </p></br>
-        <p><strong>Session Storage : </strong>Local Storage & Session Storage 90% as like the same. Session storage is also a browser API. Its highest memory capacity is 5kb & storage location only browser. There is no expiration time for storing data into local storage.<br>
-          
-          1. localStorage.getItem()
-          2. localStorage.setItem()
-          3. localStorage.removeItem()
-          4. localStorage.crear()
-          5. localStorage.length are some Local Storage Method.
-          
+        <p><strong>Session Storage : </strong>Session Storage is similar to Local Storage. Session storage is also a browser API. Its highest memory capacity is 5kb & storage location only browser. Whenever a document is loaded in a particular tab in the browser, a unique page session gets created and assigned to that particular tab. while data in localStorage doesn't expire, But data in sessionStorage is cleared when the page session ends.<br> 
       </p></br>
         </div>
       </div>
+
+      <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
+        <div class="collapse-title text-xl font-medium">
+         3. What is Event Loop ?.
+        </div>
+        <div class="collapse-content"> 
+          <p>To know event loop at 1st we have to know about working process of Java Script. JS by default single threted language that means execute js code line by line. As a result that represent blooking behabior. To prevent this problem java script use some asynchronous functions.</p></br>
+          <p>When a browser get js code, at first run an engine named v8 or others. There are two things have into an engine. 1. Heap and 2.Call stack. When start execution a <strong>main function</strong> by default run into call stack. Then each function call into callstack & after execution the function removed. When the callstack get an asynchronous function, immediately transfer to <b>web API</b> which is a part of browser environment. After processing the function web API sent into a callback queue.</p></br>
+          <p>
+          This process will be continue, and a time all function will be execute & remove from the callstack. <strong>When callstack will blank & callback queue have processed asynchronous function, then each function sent to callstack one after one and execute. A media is used to sent processed function from callback queue to callstack is called <span style="color:rgb(93, 10, 10)">Event Loop.</span></strong>     
+          </p>
+        </div>
+      </div>
+
     </div>
   </section>
 </main>
